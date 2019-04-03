@@ -6,7 +6,7 @@
 #include <unistd.h> 
 
 
-// reating random array of size 1000
+// creating random array of size 1000
 
 void arrayCreator(int a[], 1000) 
 { 
