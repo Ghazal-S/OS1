@@ -8,7 +8,7 @@
 
 // creating random array of size 1000
 
-void arrayCreator(int a[], 1000) 
+void arrayCreator(int a[1000] , 1000) 
 { 
    
     int i; 
@@ -95,3 +95,20 @@ void merge(int a[], int l1, int h1, int h2)
         a[l1] = sorted[i]; 
 }  
 
+int main() 
+{ 
+int length = 1000;
+int array[1000];
+arrayCreator(array , 1000);
+mergesort(array , 0 , 999);
+int i; 
+printf("Sorted Array : \n");
+    for (i=0; i<len; i++) 
+    { 
+             
+             printf("%d\n ", array[i]);
+            
+     
+    } 
+return 0;
+}
