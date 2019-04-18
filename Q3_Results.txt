@@ -1,0 +1,11 @@
+
+Q3_Results : 
+
+	m = 20 => run_time :0.000573 
+	m = 15 => run_time :0.000415 
+	m = 10 => run_time :0.000416
+	m = 5 => run_time :0.000318
+	m = 4 => run_time :0.000273
+	m = 3 => run_time :0.000173
+
+
