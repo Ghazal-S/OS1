@@ -24,7 +24,7 @@ while inputs:
                 print 'received "%s" from %s.' % (data, s.getpeername())
                 if data.split("[")[0] == "join" :
                     groups[data.split("[")[1]].append(s)
-                    message_queues[s].put("you are connected")
+                    message_queues[s].put("you joined group : " + (data.split("[")[1]))
                     writable.append(s)
                 elif data.split("[")[0] == "send" :
                     for client in groups[(data.split("[")[1])]:
@@ -35,10 +35,11 @@ while inputs:
                             
                 elif data.split("[")[0] == "leave" :
                     groups[data.split("[")[1]].remove(s)
-                    message_queues[s].put("you left the groop" + (data.split("[")[1]))
+                    message_queues[s].put("you left the group " + (data.split("[")[1]))
                     writable.append(s)
 
                 elif data.split("[")[0] == "quit" :
+                    s.send("BYE !")
                     exceptional.append(s)
 
                         

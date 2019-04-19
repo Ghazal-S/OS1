@@ -18,5 +18,8 @@ while True:
 
     else:
         data = s.recv(1024)
-        print "message from server:" , data
+        print  data
+        if(data == "BYE !"):
+            break
 
+s.close()
