@@ -26,6 +26,7 @@ while inputs:
                     groups[data.split("[")[1]].append(s)
                 elif data.split("[")[0] == "send" :
                     for client in groups[(data.split("[")[1])]:
+                            print "%s" % (client.getpeername(),)
                             message_queues[client].put((data.split("[")[2]))
                 elif data.split("[")[0] == "leave" :
                     groups[data.split("[")[1]].remove(s)

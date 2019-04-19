@@ -153,7 +153,7 @@ int shmid;
 	double total_time;
 	clock_t start, end;
 	start = clock();
-	mergeSort(shm_array , 0 , 999 , 5);
+	mergeSort(shm_array , 0 , 999 , 30);
 	end = clock();
 	total_time = ((double) (end - start)) /  CLOCKS_PER_SEC;
 	printf("run_time :  %f \n", total_time);
