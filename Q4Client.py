@@ -5,6 +5,7 @@ s.connect(('localhost', 50000))
 while True :
 	message =  raw_input()
 	s.sendall(message)
-data = s.recv(1024)
+	data = s.recv(1024)
+	print(data)
 s.close()
 
